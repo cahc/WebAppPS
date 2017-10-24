@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebAppPS:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebAppPS_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="WebAppPS/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WebAppPS" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="info.debatty:java-string-similarity:1.0.0" />
+        </element>
+      </element>
+      <element id="directory" name="resources">
+        <element id="dir-copy" path="$PROJECT_DIR$/WebStuff" />
+      </element>
+    </root>
+  </artifact>
+</component>
