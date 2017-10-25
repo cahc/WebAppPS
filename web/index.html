@@ -83,6 +83,16 @@ https://www.mkyong.com/jquery/jquery-ajax-submit-a-multipart-form/
 
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108643558-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108643558-1');
+    </script>
+
 
 
 </head>
@@ -108,14 +118,25 @@ https://www.mkyong.com/jquery/jquery-ajax-submit-a-multipart-form/
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Historik över anställningar & anknytningar vid UmU</h4>
+                    <h4 class="modal-title"><span class="inline" id="serverinfo">refresh page if you see this message!</span></h4>
                 </div>
                 <div class="modal-body">
-                    <p><b>Intro</b></p>
-                    <p>Buggrapport eller frågor: cristian.colliander@umu.se</p>
 
-                    <p> <span class="inline" id="serverinfo">refresh page if you see this message!</span> </p>
-                    <p>Primula är källan till information som rör anställningar och koncernkatalogen är källan till information som rör anknytningar.</p>
+                    <p>Primula är källan till information avseende anställningar och koncernkatalogen är källan till information som rör anknytningar. Data uppdateras i regel en gång per dygn.</p>
+                    <p>Ett personobjekt består av:</p>
+                    <ul style="list-style-type:none">
+                        <li><b>För- och efternamn</b></li>
+                        <li><b>Umu-id (tidigare CAS)</b></li>
+                        <li><b>E-mail</b></li>
+                        <li><b>Historik över anställningar & anknytningar</b></li>
+                    </ul>
+
+
+                    <p>Personobjekt kan återfinnas med hjälp av namn <i>eller</i> Umu-id.  En sökning med namn returnerar en rangordnad lista av personobjekt där rangordningen baseras på likhet mellan det sökta namnet om samtliga namn i databasen. Detta för att hantera eventuell osäkerhet avseende stavning (varianttålig sökning). En sökning där Umu-id används är däremot exakt.</p>
+
+                    <p>I undantagsfall kan det vara nödvändigt att ändra på de sökparametrar som styr den varianttåliga sökningen. Dessa inställningar är dock av teknisk natur och beskrivs inte vidare här. Avancerade användare kan klicka på "Sökkonfiguration (expert)" för att få tillgång till dessa inställningar.</p>
+                    <p>Frågor eller buggrapport skickas till cristian.colliander@umu.se</p>
+                    <p><small><b>Notera att tjänsten endast är åtkomstbar från datorer med en IP-adress från Campus Umeå. För åtkomst från annan plats krävs en VPN-uppkoppling.</b></small></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

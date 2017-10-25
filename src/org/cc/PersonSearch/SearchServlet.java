@@ -98,7 +98,7 @@ public class SearchServlet extends HttpServlet {
           //  String resp = "<span class=\"badge\"><div id=\"nrobj\">" +this.cachedPersons.get().size() + "</div></span> personobjekt uppdaterade <span class=\"badge\"><div id=\"updated\">" + this.updated.get() + "</div></span>";
            // String resp = "  <span class=\"badge\"><div id=\"nrobj\">" +this.cachedPersons.get().size() + "</div></span> personobjekt uppdaterade <span class=\"badge\"><div id=\"updated\">" + this.updated.get() + "</div></span>";
 
-            String resp = "Databasen uppdaterades <span class=\"badge\"><div id=\"updated\">" + this.updated.get() + "</div></span>" + " och innehåller " + "<span class=\"badge\"><div id=\"nrobj\">" +this.cachedPersons.get().size() + "</div></span>" + " personobjekt" ;
+            String resp = "Databas uppdaterad <span class=\"badge\"><div id=\"updated\">" + this.updated.get() + "</div></span>" + ". Innehåller " + "<span class=\"badge\"><div id=\"nrobj\">" +this.cachedPersons.get().size() + "</div></span>" + " personobjekt." ;
             out.print(resp);
             out.flush();
             out.close();
