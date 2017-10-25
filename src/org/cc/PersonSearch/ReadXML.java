@@ -34,13 +34,24 @@ public class ReadXML {
     private String updated = "-99";
     final SimpleDateFormat simpleDateParser = new SimpleDateFormat("yyyyMMddHHmmSSS");
 
+    private final String osName = System.getProperty("os.name");
+
+
     public ReadXML() throws ParseException {
 
-        //on server
-        File dir = new File("/mnt/pdata");
 
-        //for local development
-        //File dir = new File("C:\\XML");
+        boolean isWinDev = false;
+        if(osName != null && osName.toLowerCase().contains("windows") )   isWinDev = true;
+
+        File dir = null;
+        if(isWinDev) {
+
+            dir = new File("C:\\mnt\\pdata");
+        } else{
+
+             dir = new File("/mnt/pdata");
+        }
+
 
         //write to catalina log
         System.out.println("directory with pdata exists?: " + dir.exists());

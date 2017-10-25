@@ -19,7 +19,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.29" level="application_server_libraries" />
     <orderEntry type="library" name="info.debatty:java-string-similarity:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="TomEE 8.0.33" level="application_server_libraries" />
   </component>
 </module>
