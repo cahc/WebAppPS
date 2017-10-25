@@ -74,11 +74,21 @@ https://www.mkyong.com/jquery/jquery-ajax-submit-a-multipart-form/
 
     </script>
 
+    <style>
+        .small
+        {
+            line-height:1px;
+        }
+    </style>
+
+
+
 
 
 </head>
 
 <body>
+
 <div class="corner-ribbon top-right sticky orange">Beta</div>
 <div class="container">
     <h3>Anställningar & anknytningar
@@ -103,6 +113,7 @@ https://www.mkyong.com/jquery/jquery-ajax-submit-a-multipart-form/
                 <div class="modal-body">
                     <p><b>Intro</b></p>
                     <p>Buggrapport eller frågor: cristian.colliander@umu.se</p>
+
                     <p> <span class="inline" id="serverinfo">refresh page if you see this message!</span> </p>
 
                 </div>
@@ -119,7 +130,7 @@ https://www.mkyong.com/jquery/jquery-ajax-submit-a-multipart-form/
 
 <form>
 <div class="form-inline" role="form" id="myForm">
-    <label for="namn">Fonetisk sökning på namn:</label>
+    <label for="namn">Varianttålig sökning med namn:</label>
     <input type="text" class="form-control" id="namn" placeholder="Förnamn Efternamn">
     <label for="CAS">eller exakt sökning med UmU-id:</label>
     <input type="text" class="form-control" id="CAS" placeholder="aaaa0001">
@@ -127,10 +138,8 @@ https://www.mkyong.com/jquery/jquery-ajax-submit-a-multipart-form/
 
 
     <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#demo">Sökkonfiguration (expert)</button>
-    <div id="demo" class="collapse">
 
-
-Parametrar avseende den fonetiska sökningen: returnera topp
+    <div id="demo" class="collapse"> Avser den varianttålig sökningen: returnera topp
 
 <select class="form-control-inline" id="selectmaxhits">
     <option value="5">5</option>
@@ -138,22 +147,26 @@ Parametrar avseende den fonetiska sökningen: returnera topp
     <option value="20">20</option>
     <option value="40">40</option>
 </select>
+
 enligt
-<label class="radio-inline"><input type="radio" name="optradio" value="N-gram" checked="">2-gram</label>
+
+        <label class="radio-inline"><input type="radio" name="optradio" value="N-gram" checked="">2-gram</label>
 <label class="radio-inline"><input type="radio" name="optradio" value="Levenshtein">Levenshtein</label>
 <label class="radio-inline"><input type="radio" name="optradio" value="exakt">Initial efternamn</label>
 
     </div>
 
     <BR>
-    <BR>
-    <button type="button" id="submit" class="btn btn-info">
-    <span class="glyphicon glyphicon-search"></span> Sök</button>
-
-
-
 
 </form>
+
+    <p class="small"></p>
+
+    <button type="button" id="submit" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Sök</button>
+
+
+
+
 
 <BR>
     <div id="resultat"></div>
